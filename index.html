@@ -10,6 +10,7 @@
     src="https://kit.fontawesome.com/15976f1cea.js"
     crossorigin="anonymous"
   ></script>
+  <script src="index.js"></script>
 </head>
 <body>
 <div class="main__container">
@@ -43,6 +44,37 @@
                     </button>
                 </li>
             </ul>
+            <button class="btn__menu menu__open" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="menu__backdrop">
+                  <button class="btn__menu" onclick="closeMenu()">
+                    <div class="btn__menu--close">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                  </button>
+                <ul class="menu__linkss">
+                  <li class="menu__list">
+                    <a href="#start" class="menu__li" onclick="closeMenu()">About</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#features" class="menu__li" onclick="closeMenu()">Blog</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#pricing" class="menu__li" onclick="closeMenu()">Pricing</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__li no__click" onclick="closeMenu()">Contact Us</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#start" class="menu__li" onclick="closeMenu()">Login</a>
+                  </li>
+                  <li class="menu__list--primary">
+                    <button class="menu__btn--primary">
+                        <a href="#" class="menu__li" onclick="closeMenu()"><span class="white">Sign Up</span></a>
+                    </button>
+                  </li>
+                </ul>
         </nav>
     </section>
 
@@ -78,7 +110,7 @@
           </section>
           
 
-        <section id="#features">
+        <section id="features">
             <div class="container">
                 <div class="row">
                     <div class="services">
@@ -415,6 +447,20 @@
                                 </div>
                                 </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content__container">
+                <div class="row">
+                    <div class="contact__wrapper">
+                        <h2 class="contact__title">Developers all over the world are happily using Treact</h2>
+                            <div class="contact__links">
+                                <a href="" class="get__started--link">Get Started</a>
+                                <a href="" class="contact__us--link">Contact Us</a>
+                            </div>
                     </div>
                 </div>
             </div>
