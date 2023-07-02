@@ -727,6 +727,11 @@ nav {
 
 /* Contact */
 
+#contact {
+  position: relative;
+  z-index: 2;
+}
+
 .content__container {
   position: relative;
   padding: 96px 0;
@@ -734,6 +739,28 @@ nav {
   max-width: 1200px;
   border-radius: 8px;
   background-color: #6415ff;
+}
+
+.content__circle {
+  position: absolute;
+  width: 302.99px;
+  height: 302.99px;
+  background-color: rgb(80, 17, 240);
+  opacity: 0.5;
+}
+
+.ccircle--bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clip-path: circle(50% at 16% 86%);
+}
+
+.ccircle--top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  clip-path: circle(35% at 89% 0);
 }
 
 .contact__wrapper {
@@ -787,6 +814,34 @@ nav {
 }
 
 /* Footer */
+
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__circle {
+  position: absolute;
+  width: 302.99px;
+  height: 302.99px;
+  background-color: rgb(80, 17, 240);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.circle--bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  clip-path: circle(50% at 86% 93%);
+}
+
+.circle--top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(50% at 21% 6%);
+}
 
 .footer__container {
   padding: 24px 32px;
