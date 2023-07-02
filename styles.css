@@ -1186,4 +1186,8 @@ nav {
     min-width: 80%;
     margin: 32px 0 0 0;
   }
+
+  .menu__backdrop {
+    bottom: 58%;
+  }
 }
