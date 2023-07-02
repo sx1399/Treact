@@ -1186,8 +1186,10 @@ nav {
     min-width: 80%;
     margin: 32px 0 0 0;
   }
+}
 
+@media (max-width: 150px) {
   .menu__backdrop {
-    bottom: 58%;
-  }
+    bottom: 56%;
+  }  
 }
