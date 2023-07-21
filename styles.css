@@ -230,10 +230,28 @@ nav {
   transition: all 300ms ease;
 }
 
-.nav__link:hover {
-  text-decoration: underline;
+.nav__link--anchor:hover {
   color: #6415ff;
-  cursor: pointer;
+}
+
+.link__hover--effect {
+  position: relative;
+}
+
+.link__hover--effect:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover--effect:hover:after {
+  background-color: #6415ff;
+  left: 0;
+  width: 100%;
 }
 
 .nav__link--login {
@@ -242,11 +260,6 @@ nav {
   font-weight: 600;
   font-size: 14px;
   transition: all 300ms ease;
-}
-
-.nav__link--login:hover {
-  text-decoration: underline;
-  color: #6415ff;
 }
 
 .nav__link--primary {
